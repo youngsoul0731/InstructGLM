@@ -19,16 +19,20 @@ We introduce our proposed **Instruct**ion-finetuned **G**raph **L**anguage **M**
 
   
 
-0. Clone this repo
+0. Clone this repo and prepare the environment
 
   
 
 ```
 
 git clone https://github.com/agiresearch/InstructGLM.git
+cd InstructGLM
+conda create --name InstructGLM python=3.8
+conda activate InstructGLM
+pip install -r requirements.txt
 
 ```
-
+Make sure you have additionally installed apex
   
 
 1. Download preprocessed data from [Arxiv](https://drive.google.com/file/d/1xN4cnmSSrEdgn4xopsUEeQRRghaQ3B1B/view?usp=drive_link), [Cora](https://drive.google.com/file/d/1_8UtMA7P82HfYTDHZ0oPaxdDjueKNQfa/view?usp=drive_link), [PubMed](https://drive.google.com/file/d/1PHSp8Sx4LopNci4d0vZ8SCOWRBg4FhWc/view?usp=drive_link). If you would like to preprocess your own data, please follow the *data_preprocess* folder. Requiured raw data files for preprocessing can be downloaded from this [raw-Arxiv](https://drive.google.com/file/d/1pmWjrg195Rk-MHwrcaAhGGNcqCY-gEOc/view?usp=drive_link), [raw-Cora](https://drive.google.com/file/d/1V3sDFrXKS3VYSQp5netTaz4w3IgKQ7ac/view?usp=drive_link), [raw-PubMed](https://drive.google.com/file/d/1YbYZuuQunZybXzIc1f26y5aKLx-YIEDK/view?usp=drive_link).
