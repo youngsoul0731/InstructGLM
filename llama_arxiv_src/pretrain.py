@@ -20,7 +20,7 @@ from param import parse_args
 from pretrain_data import get_loader,load_pickle 
 from utils import LossMeter
 from dist_utils import reduce_dict, new_reduce_dict
-
+from apex import amp
 from peft import (    # LoRA Setting
     LoraConfig,
     get_peft_model,
